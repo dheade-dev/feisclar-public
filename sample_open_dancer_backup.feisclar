@@ -1,18 +1,20 @@
 {
   "version": "1.0",
   "app": "FeisCl\u00e1r",
-  "exportedAt": "2026-09-20T11:55:24.818044+00:00",
+  "exportedAt": "2026-09-20T12:35:43.698256+00:00",
   "summary": {
     "dancersCount": 2,
     "resultsCount": 224,
     "feisInfoCount": 48,
-    "note": "2026 Dataset: Ciara Kelly (Open, Top 5 Podiums) & Aoife Murphy (Beginners A to Open). Strictly Open grade, adjudicator marks for champ only."
+    "note": "Pristine 2026 Dataset: Strictly 1 feis per day, genuine FeisCl\u00e1r events, default dances configured, strictly Open grade, champ-only marks."
   },
   "data": {
     "dancers": [
       {
         "id": "dancer-sample-open-001",
         "nickname": "Ciara Kelly",
+        "firstName": "Ciara",
+        "lastName": "Kelly",
         "birthYear": 2012,
         "homeProvince": "Munster",
         "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -23,6 +25,8 @@
       {
         "id": "dancer-sample-grade-002",
         "nickname": "Aoife Murphy",
+        "firstName": "Aoife",
+        "lastName": "Murphy",
         "birthYear": 2015,
         "homeProvince": "Munster",
         "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -33,57 +37,63 @@
     ],
     "defaultDances": [
       {
-        "id": "def-1",
-        "name": "Reel",
-        "danceType": "light",
-        "timing": "4/4"
+        "dancerId": "dancer-sample-open-001",
+        "danceName": "Open Championship",
+        "grade": "Open",
+        "isActive": 1
       },
       {
-        "id": "def-2",
-        "name": "Light Jig",
-        "danceType": "light",
-        "timing": "6/8"
+        "dancerId": "dancer-sample-open-001",
+        "danceName": "Open Reel",
+        "grade": "Open",
+        "isActive": 1
       },
       {
-        "id": "def-3",
-        "name": "Single Jig",
-        "danceType": "light",
-        "timing": "12/8"
+        "dancerId": "dancer-sample-open-001",
+        "danceName": "Open Heavy Jig",
+        "grade": "Open",
+        "isActive": 1
       },
       {
-        "id": "def-4",
-        "name": "Slip Jig",
-        "danceType": "light",
-        "timing": "9/8"
+        "dancerId": "dancer-sample-open-001",
+        "danceName": "Open Hornpipe",
+        "grade": "Open",
+        "isActive": 1
       },
       {
-        "id": "def-5",
-        "name": "Heavy Jig",
-        "danceType": "heavy",
-        "timing": "6/8"
+        "dancerId": "dancer-sample-open-001",
+        "danceName": "Open Traditional Set",
+        "grade": "Open",
+        "isActive": 1
       },
       {
-        "id": "def-6",
-        "name": "Hornpipe",
-        "danceType": "heavy",
-        "timing": "2/4"
+        "dancerId": "dancer-sample-grade-002",
+        "danceName": "Reel",
+        "grade": "Beginners A",
+        "isActive": 1
       },
       {
-        "id": "def-7",
-        "name": "Traditional Set",
-        "danceType": "set",
-        "timing": "various"
+        "dancerId": "dancer-sample-grade-002",
+        "danceName": "Light Jig",
+        "grade": "Beginners A",
+        "isActive": 1
       },
       {
-        "id": "def-8",
-        "name": "Championship",
-        "danceType": "championship",
-        "timing": "various"
+        "dancerId": "dancer-sample-grade-002",
+        "danceName": "Single Jig",
+        "grade": "Beginners A",
+        "isActive": 1
+      },
+      {
+        "dancerId": "dancer-sample-grade-002",
+        "danceName": "Slip Jig",
+        "grade": "Beginners A",
+        "isActive": 1
       }
     ],
     "results": [
       {
-        "id": "7ae43395-afb2-4a50-88a1-10c01fc5ea35",
+        "id": "5780dec7-4354-4603-8e6b-eeb6768d6a82",
         "dancerId": "dancer-sample-open-001",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -102,7 +112,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2e422edb-26fb-4871-b6b8-08e528de583c",
+        "id": "2beecb3e-7208-4d0a-b537-6f80b864b250",
         "dancerId": "dancer-sample-open-001",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -121,7 +131,7 @@
         "isPromotion": 0
       },
       {
-        "id": "932a4778-ea1e-4821-a77e-509b451e9554",
+        "id": "b9ca5e4e-8625-4b27-8a49-05bf0d12b456",
         "dancerId": "dancer-sample-open-001",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -140,7 +150,7 @@
         "isPromotion": 0
       },
       {
-        "id": "912ef937-6bbd-4014-8f5b-78b0036199f4",
+        "id": "3d0885ce-4262-4606-97ee-f20f40914b01",
         "dancerId": "dancer-sample-open-001",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -159,7 +169,7 @@
         "isPromotion": 0
       },
       {
-        "id": "0fd28b63-47c2-425d-8837-5448c232a2a5",
+        "id": "d7fa90c0-a461-4fd0-81b5-bef3f04e089a",
         "dancerId": "dancer-sample-open-001",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -178,7 +188,7 @@
         "isPromotion": 0
       },
       {
-        "id": "63c5c407-3da6-4c0a-9cd4-59a28b047d96",
+        "id": "cf5cad39-bc52-4947-b74f-950796c80248",
         "dancerId": "dancer-sample-open-001",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -197,7 +207,7 @@
         "isPromotion": 0
       },
       {
-        "id": "cf752cee-b3de-4b35-96c3-dc65ef9bb845",
+        "id": "8c1d2a7c-5e9c-4f11-bdf3-92acafbcbd9e",
         "dancerId": "dancer-sample-open-001",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -216,7 +226,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2d7b2810-7306-4c85-9c56-0ffcdd180cc5",
+        "id": "09c33531-da66-40cc-9858-1be5a0dc7317",
         "dancerId": "dancer-sample-open-001",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -235,7 +245,7 @@
         "isPromotion": 0
       },
       {
-        "id": "5b16ed56-6303-45a9-940f-a1f87a33d58e",
+        "id": "1993c3f9-3488-4b44-857d-33b0e8c8715b",
         "dancerId": "dancer-sample-open-001",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -254,7 +264,7 @@
         "isPromotion": 0
       },
       {
-        "id": "7f9429a4-6a66-4378-84ab-7aae8ba0e101",
+        "id": "4711be1c-7756-4426-997e-11ec415a4320",
         "dancerId": "dancer-sample-open-001",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -273,7 +283,7 @@
         "isPromotion": 0
       },
       {
-        "id": "34183969-573f-46ae-a19a-bc1468b776a9",
+        "id": "aebc2c40-da7c-4942-9471-bde900d589f0",
         "dancerId": "dancer-sample-open-001",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -292,7 +302,7 @@
         "isPromotion": 0
       },
       {
-        "id": "935a247c-6285-4fa2-a71a-e6755a2ff5ad",
+        "id": "2c0e119c-233a-4316-bcc4-720d03f8cb30",
         "dancerId": "dancer-sample-open-001",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -311,7 +321,7 @@
         "isPromotion": 0
       },
       {
-        "id": "d758cc13-28ec-47c6-9279-5977c58ca95e",
+        "id": "825185ee-de6e-4850-8fe9-af6d3e60ec6a",
         "dancerId": "dancer-sample-open-001",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -330,7 +340,7 @@
         "isPromotion": 0
       },
       {
-        "id": "137eb0de-086d-4f1f-86fc-6d6e637d6b12",
+        "id": "12f0fdcd-82f4-4831-8da4-101506371b39",
         "dancerId": "dancer-sample-open-001",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -349,7 +359,7 @@
         "isPromotion": 0
       },
       {
-        "id": "1be29a40-acb7-4275-b4c4-86cd8eda0644",
+        "id": "cad0139f-898e-4fef-98a0-df21ede3cf81",
         "dancerId": "dancer-sample-open-001",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -368,10 +378,10 @@
         "isPromotion": 0
       },
       {
-        "id": "b03325f6-5acd-4485-8fe3-22f8c88abe01",
+        "id": "3ae603dc-1714-45bd-beab-8c36260c681e",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "U14 Girls Open Championship",
         "grade": "Open",
         "placement": 3,
@@ -382,15 +392,15 @@
         "judge3Score": 83.6,
         "adj4": 83.0,
         "adj5": 83.8,
-        "date": "2026-02-07T13:00:00.000Z",
+        "date": "2026-02-14T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "4ad82a34-b5ce-42ff-bb45-3045110f0f5c",
+        "id": "5d725495-3070-46d4-b8b0-bd019ac41ae3",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Open Reel",
         "grade": "Open",
         "placement": 2,
@@ -401,15 +411,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T13:00:00.000Z",
+        "date": "2026-02-14T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "ce5ae3c1-9a79-4629-b6e5-8f2673caf25f",
+        "id": "b5a053b7-abe6-47d1-b4cf-7eb9004031a0",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Open Heavy Jig",
         "grade": "Open",
         "placement": 1,
@@ -420,15 +430,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T13:00:00.000Z",
+        "date": "2026-02-14T13:00:00.000Z",
         "isPB": 1,
         "isPromotion": 0
       },
       {
-        "id": "aea01f11-fa92-451b-bd1f-79e353f8ae3f",
+        "id": "844586b6-6379-473b-8ba7-d648dc6e451d",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Open Hornpipe",
         "grade": "Open",
         "placement": 3,
@@ -439,15 +449,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T13:00:00.000Z",
+        "date": "2026-02-14T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "61308d01-fb81-4c18-8e3e-b31a2cc5772a",
+        "id": "67f3fc0c-5fbb-4c42-9cf4-5bfc9dbccbad",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Open Traditional Set",
         "grade": "Open",
         "placement": 4,
@@ -458,12 +468,12 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T13:00:00.000Z",
+        "date": "2026-02-14T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "82fa9ca7-40dd-4f8a-91e3-5c5407eaa5da",
+        "id": "e08be5d6-b1e8-44c6-bebe-37770e4af59d",
         "dancerId": "dancer-sample-open-001",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -482,7 +492,7 @@
         "isPromotion": 0
       },
       {
-        "id": "8222b631-1cfd-42ac-91d7-c1b77534b8bf",
+        "id": "181b70ca-fd82-47ef-8121-c51459521648",
         "dancerId": "dancer-sample-open-001",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -501,7 +511,7 @@
         "isPromotion": 0
       },
       {
-        "id": "4245983a-4b8f-4401-8772-0294018ba17d",
+        "id": "d5c2b658-2f68-442c-857e-0871e2840952",
         "dancerId": "dancer-sample-open-001",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -520,7 +530,7 @@
         "isPromotion": 0
       },
       {
-        "id": "18b035e4-9327-440e-8698-2ebc9b1272a2",
+        "id": "bab48801-a8e6-42f7-abe9-3364fabafce4",
         "dancerId": "dancer-sample-open-001",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -539,7 +549,7 @@
         "isPromotion": 0
       },
       {
-        "id": "bf53ddf1-afb0-47b8-a504-58a30280c36d",
+        "id": "9d63546a-7ce4-4ae9-89bf-457540c597b6",
         "dancerId": "dancer-sample-open-001",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -558,10 +568,10 @@
         "isPromotion": 0
       },
       {
-        "id": "d00836c0-a37d-4876-8dbc-1e199907024b",
+        "id": "f7cc8cd2-4cb3-48dd-b2cf-33f200a8f606",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "U14 Girls Open Championship",
         "grade": "Open",
         "placement": 1,
@@ -572,15 +582,15 @@
         "judge3Score": 86.6,
         "adj4": 86.0,
         "adj5": 86.8,
-        "date": "2026-03-01T13:00:00.000Z",
+        "date": "2026-03-07T13:00:00.000Z",
         "isPB": 1,
         "isPromotion": 0
       },
       {
-        "id": "ea2915f4-d8a8-44cc-8c1b-489a01c39183",
+        "id": "f2c260c1-4901-484c-ab32-058112453625",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Open Reel",
         "grade": "Open",
         "placement": 1,
@@ -591,15 +601,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T13:00:00.000Z",
+        "date": "2026-03-07T13:00:00.000Z",
         "isPB": 1,
         "isPromotion": 0
       },
       {
-        "id": "a1a2d109-d18e-4f36-902f-8d1dea169f02",
+        "id": "ed2ab5b2-8d3e-4527-b4c5-4dff1f96d005",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Open Heavy Jig",
         "grade": "Open",
         "placement": 2,
@@ -610,15 +620,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T13:00:00.000Z",
+        "date": "2026-03-07T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "33a07f94-fd6a-414b-857d-04ad645c0702",
+        "id": "814ad2b9-df41-4d12-bbed-8ab17d7f334c",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Open Hornpipe",
         "grade": "Open",
         "placement": 2,
@@ -629,15 +639,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T13:00:00.000Z",
+        "date": "2026-03-07T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "f855109f-b599-4608-a34d-5a8163c83ee8",
+        "id": "5b006f64-affa-4f25-8570-ef50facb072f",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Open Traditional Set",
         "grade": "Open",
         "placement": 2,
@@ -648,12 +658,12 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T13:00:00.000Z",
+        "date": "2026-03-07T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "a420f7c5-4dda-4fbd-9e6f-bd51ffa79494",
+        "id": "6aac04d9-80e3-4777-a6bf-4edbc513c2d0",
         "dancerId": "dancer-sample-open-001",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -672,7 +682,7 @@
         "isPromotion": 0
       },
       {
-        "id": "365b246e-be07-4d82-a838-dfe522f59b69",
+        "id": "415fe7db-2847-4aba-8c86-2363d11b031d",
         "dancerId": "dancer-sample-open-001",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -691,7 +701,7 @@
         "isPromotion": 0
       },
       {
-        "id": "f72df2a4-d9b2-4b43-bb9e-94711eaca483",
+        "id": "26df3b44-b937-4304-840c-ee2683013a5c",
         "dancerId": "dancer-sample-open-001",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -710,7 +720,7 @@
         "isPromotion": 0
       },
       {
-        "id": "d02d4b35-8af6-44fd-b50a-9edc3682a4a5",
+        "id": "742c87ef-9736-420c-b418-ac32052ae4fb",
         "dancerId": "dancer-sample-open-001",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -729,7 +739,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c2a463f4-b0d4-486f-bf06-9c88c6d0e21a",
+        "id": "a79dcd01-8652-49f7-a44e-8f077680cc0f",
         "dancerId": "dancer-sample-open-001",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -748,7 +758,7 @@
         "isPromotion": 0
       },
       {
-        "id": "0ae7630f-0576-4e23-8f5d-5fa00d0a0c82",
+        "id": "1c48cf45-6724-498d-b698-250dc5d79c42",
         "dancerId": "dancer-sample-open-001",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -767,7 +777,7 @@
         "isPromotion": 0
       },
       {
-        "id": "d22d80d0-4da5-4b54-8fc9-475245408f58",
+        "id": "c2162d6b-c690-4da8-8181-8dbdc2a8aed4",
         "dancerId": "dancer-sample-open-001",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -786,7 +796,7 @@
         "isPromotion": 0
       },
       {
-        "id": "0f7046c0-0711-46b3-bb6f-e73b2f68745c",
+        "id": "8e36103c-8e9d-4fb8-827d-6d570f298579",
         "dancerId": "dancer-sample-open-001",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -805,7 +815,7 @@
         "isPromotion": 0
       },
       {
-        "id": "7e93e1bc-3b2e-41d6-a41f-b93a2127d3a9",
+        "id": "15bc4af8-0bb2-48b5-9626-73190d07f208",
         "dancerId": "dancer-sample-open-001",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -824,7 +834,7 @@
         "isPromotion": 0
       },
       {
-        "id": "9aa27bfa-c6fc-4516-97ab-56ccf8e63e43",
+        "id": "0ed18393-df43-4cc9-a88c-60c0ef09683d",
         "dancerId": "dancer-sample-open-001",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -843,26 +853,26 @@
         "isPromotion": 0
       },
       {
-        "id": "31f3b7d5-73d1-42fc-b1ec-31e996a0d37a",
+        "id": "fe961ad5-1974-4268-b061-adc5844e229d",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
         "danceName": "U14 Girls Open Championship",
         "grade": "Open",
-        "placement": 6,
+        "placement": 5,
         "isAward": 0,
         "ageGroup": "U14",
-        "judge1Score": 79.4,
-        "judge2Score": 78.8,
-        "judge3Score": 79.1,
-        "adj4": 78.5,
-        "adj5": 79.3,
+        "judge1Score": 80.9,
+        "judge2Score": 80.3,
+        "judge3Score": 80.6,
+        "adj4": 80.0,
+        "adj5": 80.8,
         "date": "2026-05-01T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "1a904a5d-9d6c-4361-97a0-7f1700718f9a",
+        "id": "49a87338-8f74-49e8-8fbe-ad1d81700aa4",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -881,7 +891,7 @@
         "isPromotion": 0
       },
       {
-        "id": "fe1a3fda-a9db-4501-9c28-2604f29ac16e",
+        "id": "54ce8e16-7eb5-41ed-bfd5-21843babfc5d",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -900,7 +910,7 @@
         "isPromotion": 0
       },
       {
-        "id": "93167852-8bb3-4c00-8850-6f639afe1f70",
+        "id": "6c5ed868-952f-4d35-a9bb-8de226676df3",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -919,7 +929,7 @@
         "isPromotion": 0
       },
       {
-        "id": "f701d967-d676-468e-812e-abefaafd5fa9",
+        "id": "c172f5fb-41d6-407d-b61f-8cc8d0d81e30",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -938,10 +948,10 @@
         "isPromotion": 0
       },
       {
-        "id": "b7ebb893-e1ad-4b90-9667-3b8028b58073",
+        "id": "d5de99f5-ad68-4636-8388-80eb4d5c1d2d",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "U14 Girls Open Championship",
         "grade": "Open",
         "placement": 2,
@@ -952,15 +962,15 @@
         "judge3Score": 85.1,
         "adj4": 84.5,
         "adj5": 85.3,
-        "date": "2026-05-01T13:00:00.000Z",
+        "date": "2026-05-02T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "53322849-241b-4835-afee-f17b7ec6e1b9",
+        "id": "653a1cab-0f52-4df7-94f0-8cccdc5161ac",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Open Reel",
         "grade": "Open",
         "placement": 2,
@@ -971,15 +981,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T13:00:00.000Z",
+        "date": "2026-05-02T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "68136c1e-1fe2-4036-8c88-21d70a4d4941",
+        "id": "439c8c60-42c7-435b-8ed6-ec3a0d570d53",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Open Heavy Jig",
         "grade": "Open",
         "placement": 1,
@@ -990,15 +1000,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T13:00:00.000Z",
+        "date": "2026-05-02T13:00:00.000Z",
         "isPB": 1,
         "isPromotion": 0
       },
       {
-        "id": "084d1a48-b9ff-48de-9fbd-d45bb532c874",
+        "id": "1268850e-a4fe-471c-82ef-84bf64a2abfb",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Open Hornpipe",
         "grade": "Open",
         "placement": 2,
@@ -1009,15 +1019,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T13:00:00.000Z",
+        "date": "2026-05-02T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "da3b72f6-ced9-4a4e-a2b8-36e22cad9e06",
+        "id": "fb275326-470f-433e-8fbc-626cbfa644f1",
         "dancerId": "dancer-sample-open-001",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Open Traditional Set",
         "grade": "Open",
         "placement": 3,
@@ -1028,12 +1038,12 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T13:00:00.000Z",
+        "date": "2026-05-02T13:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "15f26db0-213a-4e44-a1ea-cedacaa71816",
+        "id": "9bdf69f6-766e-424c-8903-5c96fbe2f3f5",
         "dancerId": "dancer-sample-open-001",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -1052,7 +1062,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e6f2cbe3-4940-436e-8ff1-45c4a03a001f",
+        "id": "9573fda7-b32e-4770-bc6e-35bf57f32412",
         "dancerId": "dancer-sample-open-001",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -1071,7 +1081,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e29c7b5a-d8de-41d5-88a2-fd6bb4d92788",
+        "id": "1d1ede3b-e396-4c1b-9679-cd9cb996a899",
         "dancerId": "dancer-sample-open-001",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -1090,7 +1100,7 @@
         "isPromotion": 0
       },
       {
-        "id": "032ad2cb-488c-4297-83f7-8fc9fa5a34f6",
+        "id": "5ccc2b28-6935-40f0-8ff9-5c0dcbc1db15",
         "dancerId": "dancer-sample-open-001",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -1109,7 +1119,7 @@
         "isPromotion": 0
       },
       {
-        "id": "1fb40215-da02-4a40-82b8-1126a97a4262",
+        "id": "e4dcda0f-7c48-48b3-84bc-36f450064416",
         "dancerId": "dancer-sample-open-001",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -1128,7 +1138,7 @@
         "isPromotion": 0
       },
       {
-        "id": "4b3c59e0-fe62-43d3-9a83-73c6c7e16c42",
+        "id": "08eecf50-e95a-4c14-872c-44731dd00e3b",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -1147,7 +1157,7 @@
         "isPromotion": 0
       },
       {
-        "id": "7e4aa8b2-442b-477b-ac58-ead36eac115d",
+        "id": "2796f15c-10b4-4e6f-b9d0-9c31c6781bee",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -1166,7 +1176,7 @@
         "isPromotion": 0
       },
       {
-        "id": "4b920d96-632e-4f17-902c-05b5ed82425e",
+        "id": "678bfc85-93e2-46eb-9c90-9d8122349150",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -1185,7 +1195,7 @@
         "isPromotion": 0
       },
       {
-        "id": "8cd7bca5-f0a8-43f2-b81c-d3e4cb63a14e",
+        "id": "c1ae05ee-6c38-43db-91e2-6cc83b81ce0d",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -1204,7 +1214,7 @@
         "isPromotion": 0
       },
       {
-        "id": "3a561702-76ba-4d2c-a78d-67316739a044",
+        "id": "bc7c4491-5a09-49bb-96d7-cfadb4903839",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -1223,7 +1233,7 @@
         "isPromotion": 0
       },
       {
-        "id": "eacc5a39-66d8-4344-8ca1-e1b5c7df4b19",
+        "id": "cedb762d-f0ba-4c8d-9e3a-9687261d0847",
         "dancerId": "dancer-sample-open-001",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -1242,7 +1252,7 @@
         "isPromotion": 0
       },
       {
-        "id": "bb105a70-5e66-464b-80c2-674b8e37624c",
+        "id": "21c5a513-0dc5-4cdb-80bb-1d239b5b6601",
         "dancerId": "dancer-sample-open-001",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -1261,7 +1271,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c4253bb3-6eb7-4f60-b374-642448b58119",
+        "id": "11deed6f-18ce-43ce-8dd1-c3f326b16271",
         "dancerId": "dancer-sample-open-001",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -1280,7 +1290,7 @@
         "isPromotion": 0
       },
       {
-        "id": "4a8f5c72-d023-4a11-b095-b72c407f204f",
+        "id": "eb30a291-a4d8-4f93-b70a-5e7a0e2b43db",
         "dancerId": "dancer-sample-open-001",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -1299,7 +1309,7 @@
         "isPromotion": 0
       },
       {
-        "id": "5852347c-1d81-4a2d-b808-305118a74afd",
+        "id": "8a0ec1a8-4942-4fb4-b73a-577098b8989c",
         "dancerId": "dancer-sample-open-001",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -1318,7 +1328,7 @@
         "isPromotion": 0
       },
       {
-        "id": "490a0447-27a4-4a13-891b-ff729236f631",
+        "id": "5668b070-7497-4b95-afa9-593341c8f5ed",
         "dancerId": "dancer-sample-open-001",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -1337,7 +1347,7 @@
         "isPromotion": 0
       },
       {
-        "id": "b09ca838-0b2e-4ac0-b975-c63230e441be",
+        "id": "4b59bf5b-53ea-44ca-a302-36de8428149e",
         "dancerId": "dancer-sample-open-001",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -1356,7 +1366,7 @@
         "isPromotion": 0
       },
       {
-        "id": "74d6714b-3593-4be2-b9da-7cf052f572f4",
+        "id": "4beba05a-9a5e-4614-84de-d0a59e541cc6",
         "dancerId": "dancer-sample-open-001",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -1375,7 +1385,7 @@
         "isPromotion": 0
       },
       {
-        "id": "b53c821d-91c2-4bc2-bd7e-588c17225588",
+        "id": "45ad7a4b-6688-4cbe-8fce-47be5e6e7f90",
         "dancerId": "dancer-sample-open-001",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -1394,7 +1404,7 @@
         "isPromotion": 0
       },
       {
-        "id": "6f0121a3-b154-446b-aa64-09653f0be759",
+        "id": "326a79fd-66c6-432d-9972-abdf51822ce5",
         "dancerId": "dancer-sample-open-001",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -1413,7 +1423,7 @@
         "isPromotion": 0
       },
       {
-        "id": "a8060d1f-5e23-4a0c-b701-7569e2775aea",
+        "id": "f1c10026-5937-4c1c-8905-5352288e4706",
         "dancerId": "dancer-sample-open-001",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -1432,7 +1442,7 @@
         "isPromotion": 0
       },
       {
-        "id": "9f43a58c-c11b-4089-8e18-7e7324f9b0ba",
+        "id": "3c45f114-ef58-4d50-88bf-c7dbda1ae532",
         "dancerId": "dancer-sample-open-001",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -1451,7 +1461,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e79bad77-0154-4056-b93d-ef8ac5162b4f",
+        "id": "39ce5d88-0a0a-479f-aeee-817f53c3a18c",
         "dancerId": "dancer-sample-open-001",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -1470,7 +1480,7 @@
         "isPromotion": 0
       },
       {
-        "id": "d0fa5195-e146-4aeb-88d6-c3e74df95f58",
+        "id": "03e6d616-b2b8-4c60-892d-b8313fa9b987",
         "dancerId": "dancer-sample-open-001",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -1489,7 +1499,7 @@
         "isPromotion": 0
       },
       {
-        "id": "678a88cd-f05b-4039-9d9c-d653e1c5978f",
+        "id": "16dee722-e62c-4491-aedb-7d71d9cf6d20",
         "dancerId": "dancer-sample-open-001",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -1508,7 +1518,7 @@
         "isPromotion": 0
       },
       {
-        "id": "171bb4f2-4438-47f0-a223-3da5d28ac4a7",
+        "id": "cfafb0aa-7eb5-44e5-a42f-170f7b70ead4",
         "dancerId": "dancer-sample-open-001",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -1527,7 +1537,7 @@
         "isPromotion": 0
       },
       {
-        "id": "81af3b82-a0f6-4ab2-b781-85e6955216f6",
+        "id": "57811ab7-8823-48bd-aec7-17485e1612ff",
         "dancerId": "dancer-sample-open-001",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -1546,7 +1556,7 @@
         "isPromotion": 0
       },
       {
-        "id": "602e4829-eace-4f98-9a38-8e08652db29e",
+        "id": "f3cc7886-7744-4d05-bccd-3eb2c5a25b46",
         "dancerId": "dancer-sample-open-001",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -1565,7 +1575,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c02c63c8-b6e9-4b01-a50c-fb86ef41735c",
+        "id": "2840d9b5-4413-40fd-807f-ab14fcaecc6b",
         "dancerId": "dancer-sample-open-001",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -1584,7 +1594,7 @@
         "isPromotion": 0
       },
       {
-        "id": "40bdaab6-a472-4d27-9488-ea198796ddb7",
+        "id": "cfb18d4c-72a9-49d5-b00b-f8cac2464097",
         "dancerId": "dancer-sample-open-001",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -1603,7 +1613,7 @@
         "isPromotion": 0
       },
       {
-        "id": "3216eba8-ac69-441d-a4ed-a182256dd4a6",
+        "id": "b4bfba2a-47b1-4ab1-85cc-bcf9acfbe275",
         "dancerId": "dancer-sample-open-001",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -1622,7 +1632,7 @@
         "isPromotion": 0
       },
       {
-        "id": "07adb4de-7318-4b5b-91bd-0a7d5a5238c5",
+        "id": "afda5c2f-cd7a-460d-8cd6-af6b5a1c8052",
         "dancerId": "dancer-sample-open-001",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -1641,7 +1651,7 @@
         "isPromotion": 0
       },
       {
-        "id": "53a29551-8ea1-4ec7-8786-b28a4a4f4f6a",
+        "id": "acd4f5f5-2ed3-40cd-a2b7-ba9e8f7edada",
         "dancerId": "dancer-sample-open-001",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -1660,7 +1670,7 @@
         "isPromotion": 0
       },
       {
-        "id": "065c6274-e1b1-4ee3-a26d-3de0eeaf8607",
+        "id": "7447af27-8bf0-4d35-984f-b60e26e72474",
         "dancerId": "dancer-sample-open-001",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -1679,7 +1689,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e71ad8dd-419c-4f03-806d-9efa503d9302",
+        "id": "2805a187-07e3-4012-99a2-0ad4b6ac4882",
         "dancerId": "dancer-sample-open-001",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -1698,7 +1708,7 @@
         "isPromotion": 0
       },
       {
-        "id": "6d1866d2-9559-4283-af79-5970427830c3",
+        "id": "0ed11a1f-ecad-440a-a000-3bc6b4717eae",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -1717,7 +1727,7 @@
         "isPromotion": 0
       },
       {
-        "id": "ba70662f-a950-4d70-a64c-6715d0ec80f0",
+        "id": "d1070c5a-0391-4e23-8f64-5f771520ff9a",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -1736,7 +1746,7 @@
         "isPromotion": 0
       },
       {
-        "id": "89e195c9-ed57-443b-9b76-f73a71903e14",
+        "id": "aebd51f2-5d8c-4fc1-a3b5-937b1faa00ce",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -1755,7 +1765,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2c3bb0b4-c2d7-4dfc-8555-e45bc7684e1b",
+        "id": "26dd99ce-1da0-4a9c-9aed-f3b06ea412d6",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -1774,7 +1784,7 @@
         "isPromotion": 0
       },
       {
-        "id": "cfabb940-ec99-47e5-8f5d-ef092dd3aa79",
+        "id": "6dfeb1ba-d6e9-4dd9-b2f1-23a627a9a0ca",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -1793,7 +1803,7 @@
         "isPromotion": 0
       },
       {
-        "id": "6dea8c42-ff51-45fa-9d44-87267008e388",
+        "id": "21aed2a5-78a4-4ce1-ae69-760494e2b2ab",
         "dancerId": "dancer-sample-open-001",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -1812,7 +1822,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e8d4bc6a-ec5e-4a4f-8a72-851a6799ea2d",
+        "id": "08adcc10-77c5-4876-90ec-205b05a49d5e",
         "dancerId": "dancer-sample-open-001",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -1831,7 +1841,7 @@
         "isPromotion": 0
       },
       {
-        "id": "89ffec3d-cc88-4517-a670-b23cace47276",
+        "id": "214b1d7a-f397-4089-aec5-5d41c5df6be6",
         "dancerId": "dancer-sample-open-001",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -1850,7 +1860,7 @@
         "isPromotion": 0
       },
       {
-        "id": "61e08480-dd4d-4733-abcb-616d17567a31",
+        "id": "3460a0dd-4a90-40f7-96c4-d3bd091081bf",
         "dancerId": "dancer-sample-open-001",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -1869,7 +1879,7 @@
         "isPromotion": 0
       },
       {
-        "id": "8d02fcf3-ed66-4d2f-bad4-2d1cba2bc2b7",
+        "id": "20160d56-5cc1-4da6-b203-b3f8f914f80e",
         "dancerId": "dancer-sample-open-001",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -1888,7 +1898,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2aa5d5c5-67b6-43c6-bb47-4c8364d249c9",
+        "id": "2f48527a-37d3-40b5-b864-e614f15bdaa9",
         "dancerId": "dancer-sample-open-001",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -1907,7 +1917,7 @@
         "isPromotion": 0
       },
       {
-        "id": "6b8d789f-445b-46a6-b79f-869fcc99b506",
+        "id": "c4b19174-fb0f-41cd-8dfc-391d24a6bc95",
         "dancerId": "dancer-sample-open-001",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -1926,7 +1936,7 @@
         "isPromotion": 0
       },
       {
-        "id": "f2e4a65b-0f5c-4a05-b2d4-db86ba9a401d",
+        "id": "1414d7b1-9709-4ad8-afca-3262cfaa273f",
         "dancerId": "dancer-sample-open-001",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -1945,7 +1955,7 @@
         "isPromotion": 0
       },
       {
-        "id": "94cea85a-8537-4d06-8976-60169a9b603a",
+        "id": "34402147-b226-4605-9125-98eadcfc9385",
         "dancerId": "dancer-sample-open-001",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -1964,7 +1974,7 @@
         "isPromotion": 0
       },
       {
-        "id": "7845a041-5d10-450d-a6d0-abfd6f04e9d2",
+        "id": "150610dd-7330-419f-bd46-71147ca13817",
         "dancerId": "dancer-sample-open-001",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -1983,7 +1993,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e02b537b-0dec-4b69-920b-ecef98220f8b",
+        "id": "6a76ea47-cfb9-4283-bd77-9a702b1bc4a4",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -2002,7 +2012,7 @@
         "isPromotion": 0
       },
       {
-        "id": "cc1ea3cf-17d3-45c4-858a-44375111443d",
+        "id": "13c5273d-9159-4433-bcad-ab527605ce9c",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -2021,7 +2031,7 @@
         "isPromotion": 0
       },
       {
-        "id": "ee28b01c-f25c-4d62-a7ac-12b86a13793e",
+        "id": "71450453-2e20-4757-baa8-eea8d1d05761",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -2040,7 +2050,7 @@
         "isPromotion": 0
       },
       {
-        "id": "43474798-1a8b-43e8-9f9a-d1240f5ea8f8",
+        "id": "843f997d-c161-4be6-a074-597e5bfbb394",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -2059,7 +2069,7 @@
         "isPromotion": 0
       },
       {
-        "id": "79f3cd9b-2bcb-48c9-a625-b707a13d6298",
+        "id": "626b899e-5c46-4769-89c1-ddacdfffe680",
         "dancerId": "dancer-sample-open-001",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -2078,7 +2088,7 @@
         "isPromotion": 0
       },
       {
-        "id": "5fd54b03-ab20-49a5-a86b-85076fd3daff",
+        "id": "67a5d0a7-5189-4819-a69e-862c80b7d128",
         "dancerId": "dancer-sample-open-001",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -2097,7 +2107,7 @@
         "isPromotion": 0
       },
       {
-        "id": "8ca19cf1-1d5a-4faa-84f2-94ca33d24c11",
+        "id": "594eb4a5-0106-41a9-bf4a-88ad983f88a2",
         "dancerId": "dancer-sample-open-001",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -2116,7 +2126,7 @@
         "isPromotion": 0
       },
       {
-        "id": "a119f629-b132-4185-a45a-e3103d43945b",
+        "id": "89ac9800-5eeb-45c8-9200-87f3d4fa3077",
         "dancerId": "dancer-sample-open-001",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -2135,7 +2145,7 @@
         "isPromotion": 0
       },
       {
-        "id": "386dff9d-aedf-4b86-a616-d794a5dabdf6",
+        "id": "81de0219-0881-415c-9b4f-184eefcd7243",
         "dancerId": "dancer-sample-open-001",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -2154,7 +2164,7 @@
         "isPromotion": 0
       },
       {
-        "id": "7c38d5f2-a206-4f7b-8607-bb98eb46c642",
+        "id": "33d9e671-1d39-4da7-ae47-9d160958e9cf",
         "dancerId": "dancer-sample-open-001",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -2173,7 +2183,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2d7bda43-a2fd-48d0-995a-339fbc05f32a",
+        "id": "1eea808c-26d7-4377-964c-377e9654ac9d",
         "dancerId": "dancer-sample-open-001",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -2192,7 +2202,7 @@
         "isPromotion": 0
       },
       {
-        "id": "024da8b6-864d-4b6c-aa87-f1a96e49ce6f",
+        "id": "fa3a96ee-ce48-4b15-932b-68ec647fab46",
         "dancerId": "dancer-sample-open-001",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -2211,7 +2221,7 @@
         "isPromotion": 0
       },
       {
-        "id": "927b7868-3163-4cc4-898c-83c20eb7d004",
+        "id": "273529f3-52e3-455d-9d9f-f8138f5db193",
         "dancerId": "dancer-sample-open-001",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -2230,7 +2240,7 @@
         "isPromotion": 0
       },
       {
-        "id": "b20567bc-d183-40b1-9cb1-c02443f9fbe3",
+        "id": "45ba9524-4c39-4009-a08e-f1b26676c749",
         "dancerId": "dancer-sample-open-001",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -2249,7 +2259,7 @@
         "isPromotion": 0
       },
       {
-        "id": "8a9c9965-9539-4fe0-b3ef-5c24c1b5167a",
+        "id": "4eaf0ee7-8244-4654-8f77-ab9fe8ffb7dd",
         "dancerId": "dancer-sample-open-001",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -2268,7 +2278,7 @@
         "isPromotion": 0
       },
       {
-        "id": "8732fe48-7dcd-4400-8f7a-77a6933f9e3d",
+        "id": "f827837b-833d-432a-96b5-bea7c1f297b5",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -2287,7 +2297,7 @@
         "isPromotion": 0
       },
       {
-        "id": "b136188e-d32e-4843-bd02-aa11089567db",
+        "id": "b8787333-8e50-4902-bd7f-263a8ceed6cf",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -2306,7 +2316,7 @@
         "isPromotion": 0
       },
       {
-        "id": "98ea855b-77f5-4091-9100-f5cd160cce23",
+        "id": "97152610-7409-4491-b46c-31bce99ec039",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -2325,7 +2335,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2e337403-177a-4424-9a84-35f278a0159b",
+        "id": "5fcb5287-cabe-40fa-b7d5-0b12bdfaff16",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -2344,7 +2354,7 @@
         "isPromotion": 0
       },
       {
-        "id": "d78caa27-335f-439d-b7e1-77dd54125889",
+        "id": "49582639-57de-4801-80cd-878cc33d52b2",
         "dancerId": "dancer-sample-open-001",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -2363,7 +2373,7 @@
         "isPromotion": 0
       },
       {
-        "id": "150c78be-dd41-437f-a7df-1917e01e3403",
+        "id": "02e9ff68-85b8-4424-bcda-9af0a834365f",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -2382,7 +2392,7 @@
         "isPromotion": 0
       },
       {
-        "id": "3a70711b-b71c-4e37-927e-9914b4102858",
+        "id": "1186d265-78da-4cd9-b2bb-7957dac51a1a",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -2401,7 +2411,7 @@
         "isPromotion": 0
       },
       {
-        "id": "dff5b579-3d90-48bf-989e-3efb065d5abf",
+        "id": "bce367d4-ee50-45fb-be97-89c6eac6a1d6",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -2420,7 +2430,7 @@
         "isPromotion": 0
       },
       {
-        "id": "17b571eb-ad51-4fda-aa1a-1cdcd724d706",
+        "id": "f717be3d-0ed2-40a8-b1f2-575386bb8937",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "cc5f6303-4143-4b82-8349-019cc476b832",
         "feisTitle": "South Belfast Open Championships",
@@ -2439,7 +2449,7 @@
         "isPromotion": 0
       },
       {
-        "id": "a6fd2fba-c6b0-411b-9bcf-1652019fe515",
+        "id": "5e945e4d-6e5d-4646-a586-0ae61403c74e",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -2458,7 +2468,7 @@
         "isPromotion": 0
       },
       {
-        "id": "26ae184f-2c3f-47b9-8e99-5087c243a062",
+        "id": "176e580e-3aff-45c0-bb4a-81c6c0c7db88",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -2477,7 +2487,7 @@
         "isPromotion": 0
       },
       {
-        "id": "daf20d94-aa91-4bbc-b951-5efae1620af7",
+        "id": "0d59377a-d8ef-4e81-959a-7e7f1f83fda4",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -2496,7 +2506,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c9a6ea36-680b-4508-a38c-a44019b319a2",
+        "id": "b9fd7d76-b12e-4171-8c32-367bcdd4927d",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "9cf1725b-2184-4867-b6d8-56d99eaf23e6",
         "feisTitle": "Feile Crumlin",
@@ -2515,7 +2525,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e1f9e724-0bea-4d28-9136-5377ce111d0c",
+        "id": "87012e33-78d2-4d5e-9f43-bddc2fb2d0d7",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -2534,7 +2544,7 @@
         "isPromotion": 1
       },
       {
-        "id": "45acd68e-7051-47fe-b857-46e2064968ed",
+        "id": "6ed0416b-6489-4fb1-ba9f-e3e4e55e0b09",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -2553,7 +2563,7 @@
         "isPromotion": 0
       },
       {
-        "id": "59b0181c-8897-4af5-a82b-017c4dbe748b",
+        "id": "b4b98ba5-22a1-4b79-8c47-752cc51efce4",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -2572,7 +2582,7 @@
         "isPromotion": 0
       },
       {
-        "id": "d67fbb11-1052-4c30-a400-9dd4e7427423",
+        "id": "5a378a18-ed43-4943-8bb8-f6629128d30c",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "7d8d308f-f697-437a-926b-67ee96b26e1a",
         "feisTitle": "Cork Championships",
@@ -2591,10 +2601,10 @@
         "isPromotion": 0
       },
       {
-        "id": "dba7022b-b1f3-4fe4-a465-929e5f3cf074",
+        "id": "55108c08-d9e9-4a88-b7bb-517013d8566f",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Beginners A Reel",
         "grade": "Beginners A",
         "placement": 1,
@@ -2605,15 +2615,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T11:00:00.000Z",
+        "date": "2026-02-14T11:00:00.000Z",
         "isPB": 1,
-        "isPromotion": 1
+        "isPromotion": 0
       },
       {
-        "id": "a8afc3da-1c2d-4e2f-9e8c-c9332c9bd10f",
+        "id": "472b6b8a-4d51-462d-93fe-ea3da9fc83fb",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Beginners A Light Jig",
         "grade": "Beginners A",
         "placement": 1,
@@ -2624,15 +2634,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T11:00:00.000Z",
+        "date": "2026-02-14T11:00:00.000Z",
         "isPB": 1,
         "isPromotion": 1
       },
       {
-        "id": "f8fd5958-3079-4d80-8d7d-daf1ad099e7a",
+        "id": "e71ec5fc-bd87-465f-8517-ce8978ae1827",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Beginners A Single Jig",
         "grade": "Beginners A",
         "placement": 1,
@@ -2643,15 +2653,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T11:00:00.000Z",
+        "date": "2026-02-14T11:00:00.000Z",
         "isPB": 1,
         "isPromotion": 1
       },
       {
-        "id": "ccf0ada3-9d58-4a8c-a1ab-5e2c157bac9a",
+        "id": "8e642970-be4f-4c3d-8cea-85c1a6be402f",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
-        "feisTitle": "Clare Feis",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
+        "feisTitle": "Rince O'Chroi",
         "danceName": "Beginners A Slip Jig",
         "grade": "Beginners A",
         "placement": 2,
@@ -2662,12 +2672,12 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-02-07T11:00:00.000Z",
+        "date": "2026-02-14T11:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "4f0cd609-6208-4165-8a1f-3571b37fb109",
+        "id": "51c504ee-ac36-4d70-bba4-0e5ff6500a22",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -2686,7 +2696,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e3be6d29-931e-4e29-893f-b4e68c0ea3fa",
+        "id": "2c47b14d-02c2-4c70-a4a1-27c742356350",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -2705,7 +2715,7 @@
         "isPromotion": 0
       },
       {
-        "id": "badd763d-50f8-4b86-ae0f-445bea2e4cb0",
+        "id": "c5128b29-92ee-4ced-8d30-3410fc68d524",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -2724,7 +2734,7 @@
         "isPromotion": 0
       },
       {
-        "id": "1f6854b0-8f58-46ce-b7ff-402577e20a34",
+        "id": "f45dd177-a234-47cf-89fc-9d9be3544719",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "52856756-72de-4edb-a94e-d899ca8e2166",
         "feisTitle": "Kilcullen Parish Feis",
@@ -2743,10 +2753,10 @@
         "isPromotion": 0
       },
       {
-        "id": "dabeefd2-0eb2-4e1a-95ef-f245f2fcfde8",
+        "id": "3f0d40b9-07b9-4db1-ae6b-4b671ee43e73",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Beginners B Reel",
         "grade": "Beginners B",
         "placement": 2,
@@ -2757,15 +2767,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T11:00:00.000Z",
+        "date": "2026-03-07T11:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "efcac4e0-6bf5-417f-80ad-2113cfa90b5b",
+        "id": "8c9d77e0-ac81-4b05-8529-92df912dde22",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Beginners B Light Jig",
         "grade": "Beginners B",
         "placement": 2,
@@ -2776,15 +2786,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T11:00:00.000Z",
+        "date": "2026-03-07T11:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "03cfcd53-a056-4bdf-8691-49d4beb2e756",
+        "id": "afc32440-9752-4d91-9cd8-b92c82fbc05e",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Beginners B Heavy Jig",
         "grade": "Beginners B",
         "placement": 3,
@@ -2795,15 +2805,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T11:00:00.000Z",
+        "date": "2026-03-07T11:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "be68d6f2-d1c9-4632-95fe-59f188e3f4bd",
+        "id": "f048df6a-50d6-456e-a45c-c2c0a67d35f4",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
-        "feisTitle": "Wicklow Branch Feis",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
+        "feisTitle": "St Francis Feis",
         "danceName": "Beginners B Slip Jig",
         "grade": "Beginners B",
         "placement": 3,
@@ -2814,12 +2824,12 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-03-01T11:00:00.000Z",
+        "date": "2026-03-07T11:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "3b8bd0a4-3542-4284-ae44-7f55c2d87bed",
+        "id": "40600d55-a702-465b-b726-cdf1cd0f8c22",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -2838,7 +2848,7 @@
         "isPromotion": 1
       },
       {
-        "id": "8a369918-6adb-4f76-b47a-4f17c6b2d3c4",
+        "id": "99e9bf69-e33f-49aa-95a5-aec7978e7363",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -2857,7 +2867,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e74b8898-195d-4497-9a9e-bcc04ccd303a",
+        "id": "a587848c-01c8-4b5f-ba51-a81fcd2a1ecb",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -2876,7 +2886,7 @@
         "isPromotion": 0
       },
       {
-        "id": "b1131f55-1b1c-431a-a5c2-65cf0c430566",
+        "id": "ca997faf-0967-43ca-a18c-ff44b7699af7",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "fbed104e-a2ec-4ecf-a1c6-deb70fdb808f",
         "feisTitle": "Good Counsel Feis",
@@ -2895,7 +2905,7 @@
         "isPromotion": 0
       },
       {
-        "id": "5ab351db-719c-4325-941f-69480abf258a",
+        "id": "c5c614e9-f3c5-4a9c-8921-eb1f781b568b",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -2914,7 +2924,7 @@
         "isPromotion": 0
       },
       {
-        "id": "eaea548f-4bf1-4b8b-a0d9-ac8c65c60149",
+        "id": "e141eb8f-fec7-43d6-8785-cf769369b85f",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -2933,7 +2943,7 @@
         "isPromotion": 1
       },
       {
-        "id": "cde365f1-912a-49ac-a3b2-d7dbb1e6482f",
+        "id": "72507f16-fa56-4ab5-9c21-97cc730846af",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -2952,7 +2962,7 @@
         "isPromotion": 0
       },
       {
-        "id": "59ba2dff-cd13-4975-b4f7-aaed43017c1c",
+        "id": "471f49d2-4513-485f-84a1-3c5967ca9a7e",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "935290bc-39b3-457b-85b1-434902621b47",
         "feisTitle": "Donacavey Feis",
@@ -2971,7 +2981,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2c8699a1-cabf-4e14-ab8c-a085b7dc4bc2",
+        "id": "bd361a3b-1084-4878-afa8-c9e7e0ef326b",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -2990,7 +3000,7 @@
         "isPromotion": 0
       },
       {
-        "id": "aa22477e-5deb-4682-a637-9713010f21aa",
+        "id": "4608bd71-5ad9-49b4-ac07-1895f6de9862",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -3009,7 +3019,7 @@
         "isPromotion": 0
       },
       {
-        "id": "de5f5e89-578c-4036-8740-e4f1a20b9fd3",
+        "id": "dbb788c1-2c45-43c7-a02a-22e3395568a7",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -3028,7 +3038,7 @@
         "isPromotion": 0
       },
       {
-        "id": "37a4b47a-39f2-4715-9386-e7c4e66a79bc",
+        "id": "a0cddb0e-113c-46dc-b69f-d659de809792",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c4c2fe62-c093-4735-b52d-50966421d83a",
         "feisTitle": "South of England Open Championships",
@@ -3047,10 +3057,10 @@
         "isPromotion": 0
       },
       {
-        "id": "37438bab-5efd-4ddc-9875-88eda4e5d510",
+        "id": "b9475ce9-158a-45a8-9f21-56a8ccf89e22",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Beginners B Reel",
         "grade": "Beginners B",
         "placement": 1,
@@ -3061,15 +3071,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T11:00:00.000Z",
+        "date": "2026-05-02T11:00:00.000Z",
         "isPB": 1,
         "isPromotion": 0
       },
       {
-        "id": "ceb55cb3-a1aa-4421-a508-8d5c39129d4b",
+        "id": "ba10c101-0483-47da-a82c-d2e73a4d0107",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Beginners B Heavy Jig",
         "grade": "Beginners B",
         "placement": 1,
@@ -3080,15 +3090,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T11:00:00.000Z",
+        "date": "2026-05-02T11:00:00.000Z",
         "isPB": 1,
         "isPromotion": 0
       },
       {
-        "id": "15cab8cd-3421-4dbd-b3c9-6c151b314486",
+        "id": "91c31534-fc47-4add-bf7c-ded671d4ad73",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Beginners B Light Jig",
         "grade": "Beginners B",
         "placement": 2,
@@ -3099,15 +3109,15 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T11:00:00.000Z",
+        "date": "2026-05-02T11:00:00.000Z",
         "isPB": 0,
         "isPromotion": 0
       },
       {
-        "id": "0ad5b785-ce07-4cb4-bd03-8b08ccbdc5c5",
+        "id": "8c0edf2d-4b03-4630-825d-27cf12b65c14",
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
-        "feisTitle": "Feis Ath Luain",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
+        "feisTitle": "Manresa Feis",
         "danceName": "Beginners B Slip Jig",
         "grade": "Beginners B",
         "placement": 1,
@@ -3118,12 +3128,12 @@
         "judge3Score": null,
         "adj4": null,
         "adj5": null,
-        "date": "2026-05-01T11:00:00.000Z",
+        "date": "2026-05-02T11:00:00.000Z",
         "isPB": 1,
         "isPromotion": 0
       },
       {
-        "id": "1fe4f0b9-0578-4602-aeaf-fba74fed1815",
+        "id": "05887cc6-05bd-4e0c-9bf3-e37c80aca11e",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -3142,7 +3152,7 @@
         "isPromotion": 0
       },
       {
-        "id": "efad4d56-be2e-44c0-b507-4286ce73afa2",
+        "id": "9de4011f-820e-4c82-aeac-d673c7112511",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -3161,7 +3171,7 @@
         "isPromotion": 0
       },
       {
-        "id": "bfc125e1-5623-443b-aff9-79fcb45f108b",
+        "id": "d649d76a-444c-4e03-8c98-82b2a193615c",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -3180,7 +3190,7 @@
         "isPromotion": 0
       },
       {
-        "id": "0f4900c8-075f-49cb-aa52-ccf2038c1eb7",
+        "id": "ae36cf04-ffe3-47ed-905c-f915c9db2355",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "6b2e2021-3b00-4c9a-babf-2443eb483d88",
         "feisTitle": "Boyneside Feis",
@@ -3199,7 +3209,7 @@
         "isPromotion": 0
       },
       {
-        "id": "409e733f-8239-4eb9-b61a-7a2a38980c8b",
+        "id": "efefc19c-5dc5-4607-95b5-161241d74ba3",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -3218,7 +3228,7 @@
         "isPromotion": 0
       },
       {
-        "id": "846d2c00-8ad0-47d3-8c7f-d5c5c0fad1ad",
+        "id": "782bdac5-e042-4cdb-b450-53eacc584050",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -3237,7 +3247,7 @@
         "isPromotion": 0
       },
       {
-        "id": "4e0ef700-ba0d-4b6c-bf2c-343bc5651af4",
+        "id": "60e398ba-fb15-4f40-95b9-8825c88292e5",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -3256,7 +3266,7 @@
         "isPromotion": 0
       },
       {
-        "id": "b391fced-20a5-4f92-a793-75b23c60045e",
+        "id": "63864c12-9db1-4fe6-bbae-093725e2e865",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2a9af693-4085-48bc-b600-1758db32919e",
         "feisTitle": "Summer Branch Feis",
@@ -3275,7 +3285,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c7097b30-a25e-4bed-876b-68e2f2f03a9d",
+        "id": "c61d634a-dfd6-4abd-807a-b51833fb9bdc",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -3294,7 +3304,7 @@
         "isPromotion": 1
       },
       {
-        "id": "537b7747-7c53-467d-bfab-1dc9a20133b1",
+        "id": "cb421c71-f71e-4ec0-9ac0-3a0e2bfae813",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -3313,7 +3323,7 @@
         "isPromotion": 0
       },
       {
-        "id": "a5097109-213e-46b8-a50d-7265ba803e8b",
+        "id": "5f54fd39-0adc-4ee8-89cf-714752ac3f62",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -3332,7 +3342,7 @@
         "isPromotion": 0
       },
       {
-        "id": "56344930-1f62-49be-a26d-96285f3deeb2",
+        "id": "74bab55d-f534-43a5-9e38-e77eed9a9275",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "38dfcd1d-a0ea-424f-b145-24da096b4868",
         "feisTitle": "Glasnevin Feis",
@@ -3351,7 +3361,7 @@
         "isPromotion": 0
       },
       {
-        "id": "9875ce26-f117-42c5-81c8-d9eee5f0df67",
+        "id": "cf8395b7-320f-4645-89f1-397484303136",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -3370,7 +3380,7 @@
         "isPromotion": 0
       },
       {
-        "id": "da42318d-c3e2-4f91-bf61-52f6443c632b",
+        "id": "b32d7746-23d5-4d6a-bec1-d99eed9eb253",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -3389,7 +3399,7 @@
         "isPromotion": 1
       },
       {
-        "id": "bef10127-b456-47bf-825c-1becb5906724",
+        "id": "132a30f9-8028-4216-96dc-36545b894dbc",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -3408,7 +3418,7 @@
         "isPromotion": 1
       },
       {
-        "id": "97d835c4-b5a9-48d0-a7b0-320e09fc5cbd",
+        "id": "056772b6-5630-4f81-8945-a41a83e74fc7",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "5a1310f3-dd63-4f34-94f1-06ec5bd3d14a",
         "feisTitle": "Emerald Championships",
@@ -3427,7 +3437,7 @@
         "isPromotion": 1
       },
       {
-        "id": "a7d07991-acb6-48c3-a681-13245be00a50",
+        "id": "541d8510-1913-401e-beae-7c2ca0b5be3e",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -3446,7 +3456,7 @@
         "isPromotion": 0
       },
       {
-        "id": "cdb0c572-3818-4501-befd-85c1d22b8293",
+        "id": "c94be33e-1ca9-42d3-888c-e2f2157a754a",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -3465,7 +3475,7 @@
         "isPromotion": 0
       },
       {
-        "id": "ba7ac474-9d9f-40ec-92d9-96179f6a5cf0",
+        "id": "90b7dc06-a653-4bc0-b273-7ecb7cb6a555",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -3484,7 +3494,7 @@
         "isPromotion": 0
       },
       {
-        "id": "bafff62e-2c99-43e5-921c-d0519edbd408",
+        "id": "e4506cc3-328a-4164-9034-ce76dae941d9",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "27b6e742-8345-46d6-a9e2-cfbca4c9a9e4",
         "feisTitle": "Feile Bogside",
@@ -3503,7 +3513,7 @@
         "isPromotion": 0
       },
       {
-        "id": "053b5cb4-5924-40aa-8d59-d5da702a3e43",
+        "id": "5092bf85-5778-41f6-adf3-c9a258ff9ced",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -3522,7 +3532,7 @@
         "isPromotion": 0
       },
       {
-        "id": "bec663f4-36e0-40a1-9bc7-055e69b8ad5a",
+        "id": "a010a0fb-4333-49f4-aa3c-25a87bdd9871",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -3541,7 +3551,7 @@
         "isPromotion": 0
       },
       {
-        "id": "38cdb201-ae4c-4525-9d6b-f3b3887e8167",
+        "id": "92568020-e54b-43be-87c6-7540adcff2e0",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -3560,7 +3570,7 @@
         "isPromotion": 0
       },
       {
-        "id": "df151dd0-bc35-4b72-90fd-bab7440d8c8e",
+        "id": "3d0d4d96-abe5-4369-90e9-f22f9f6730cc",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "a651a445-98f4-467f-abb0-ecf4644acda2",
         "feisTitle": "Esther Treanor Memorial Feis",
@@ -3579,7 +3589,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c898f6f1-d289-4b4a-a6ea-f4d29473b49e",
+        "id": "fd677822-060f-4750-9867-c2363822bb49",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -3598,7 +3608,7 @@
         "isPromotion": 0
       },
       {
-        "id": "08486eab-053a-4695-9efb-31457391e1e4",
+        "id": "1c9ce14b-93c6-4c2e-910d-113a89793573",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -3617,7 +3627,7 @@
         "isPromotion": 0
       },
       {
-        "id": "6d0ba290-d202-432d-a9c1-b440688d0653",
+        "id": "9def3c2a-ba2e-4368-a32e-ace9c6e99fbd",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -3636,7 +3646,7 @@
         "isPromotion": 0
       },
       {
-        "id": "392c0834-5bea-4521-8fb0-47097367bcc6",
+        "id": "aa08874e-740f-48d9-a927-ffba36acd5d9",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -3655,7 +3665,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c01cbd12-535b-4526-81a3-e14ec8bc59f2",
+        "id": "3aa2b58e-d11a-4567-b515-006c7fa6d2c2",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "d08de124-0a39-49e5-9d30-588781eb021a",
         "feisTitle": "St Agnes Charity Feis",
@@ -3674,7 +3684,7 @@
         "isPromotion": 0
       },
       {
-        "id": "4c13a2cd-cf5b-442c-bd2f-a7e692f49371",
+        "id": "76f7478d-ab73-4148-aadb-8a093954d5bb",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -3693,7 +3703,7 @@
         "isPromotion": 0
       },
       {
-        "id": "2c87ff8a-554c-4f46-a89e-e78060ad2b02",
+        "id": "74973bdc-6080-4743-b009-d1fcf9f9bfdf",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -3712,7 +3722,7 @@
         "isPromotion": 0
       },
       {
-        "id": "d662e6dc-e154-4dfc-b01c-845b5172664c",
+        "id": "401e80e2-5cac-4b0a-a344-a54b689006cf",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -3731,7 +3741,7 @@
         "isPromotion": 0
       },
       {
-        "id": "aef5daf5-7fa4-49ab-8ab7-35055004f3da",
+        "id": "d1622299-8ad3-4568-b93b-445f9c04fd54",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -3750,7 +3760,7 @@
         "isPromotion": 0
       },
       {
-        "id": "0af98e5c-daab-4ce2-a893-98a5c9e33539",
+        "id": "68963200-0dff-4fe5-a9c4-2cd265044435",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2b44be6d-930a-46e4-b57e-4cfc917df820",
         "feisTitle": "Lily McCormack Memorial Feis",
@@ -3769,7 +3779,7 @@
         "isPromotion": 0
       },
       {
-        "id": "4e26094a-b0ed-4326-a70a-f320e1cf60d6",
+        "id": "0c29beb7-0311-4818-9de4-62e7a3e8646b",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -3788,7 +3798,7 @@
         "isPromotion": 1
       },
       {
-        "id": "bdeddc89-c379-4959-b17d-57645cd1b6cb",
+        "id": "e9507ce3-481c-49b5-8c6c-e62ff5290e0a",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -3807,7 +3817,7 @@
         "isPromotion": 1
       },
       {
-        "id": "551bfe3d-f0c8-41da-b4d4-bda1119eb375",
+        "id": "38647ede-5371-4f25-bc21-5412ca02233c",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -3826,7 +3836,7 @@
         "isPromotion": 0
       },
       {
-        "id": "f2954cc5-0e46-4657-b15b-03678b66b9ce",
+        "id": "a598faf8-f6c6-4fe4-96ca-7b9478e63e0b",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -3845,7 +3855,7 @@
         "isPromotion": 1
       },
       {
-        "id": "d7b657dc-30a7-4d29-ad2f-5a69440aa4ca",
+        "id": "bf8c178e-6e0a-4304-84a5-e475803e9889",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "33102838-4c98-4206-b66c-0f0e0b999181",
         "feisTitle": "St Patrick's Feis",
@@ -3864,7 +3874,7 @@
         "isPromotion": 1
       },
       {
-        "id": "cef7a8bd-efd3-45b0-a004-4193d90d3508",
+        "id": "19f6c4f5-592b-47bd-82a1-8077afefd5b1",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -3883,7 +3893,7 @@
         "isPromotion": 0
       },
       {
-        "id": "3044677e-a189-4137-a8e3-cc47774e2ee4",
+        "id": "e8e4faf2-bbe9-4388-8db9-079c16be7f75",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -3902,7 +3912,7 @@
         "isPromotion": 0
       },
       {
-        "id": "aed8d39f-f9ee-452e-b1af-574d6da5da38",
+        "id": "40e11406-9888-4021-99b7-c5f3eddea05c",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -3921,7 +3931,7 @@
         "isPromotion": 1
       },
       {
-        "id": "9e4486a7-7741-475c-ae97-f35cae2b03cf",
+        "id": "6545a4f5-d0de-480e-b8d1-9c16cbaf8cdf",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -3940,7 +3950,7 @@
         "isPromotion": 0
       },
       {
-        "id": "50e16ef6-6ba8-4db9-a792-5243df5bb814",
+        "id": "67606b09-3709-41ba-ab42-4d1e7b10383c",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "344a3698-cf7c-4fd0-aa59-89110e07de97",
         "feisTitle": "Liffey Championships",
@@ -3959,7 +3969,7 @@
         "isPromotion": 0
       },
       {
-        "id": "a95dd855-081f-432d-a85a-a045bf8101ba",
+        "id": "bc63eb62-1d35-49eb-8a53-c253c6a37165",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -3978,7 +3988,7 @@
         "isPromotion": 0
       },
       {
-        "id": "c2e2f184-3e03-4193-a78f-1a9a0941aed5",
+        "id": "07b0e57d-929b-428e-8be8-f0ab29577066",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -3997,7 +4007,7 @@
         "isPromotion": 0
       },
       {
-        "id": "ffbaaebd-b475-4c82-8fc9-e82bf59f6346",
+        "id": "f2badc91-cebc-4453-acc8-b7f55a8977aa",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -4016,7 +4026,7 @@
         "isPromotion": 0
       },
       {
-        "id": "1d2eb51d-5905-4eca-8221-4fa0573753fe",
+        "id": "4759789f-0c78-4abf-8b5c-c0e028e5d627",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -4035,7 +4045,7 @@
         "isPromotion": 0
       },
       {
-        "id": "431168df-0d13-4ea2-81f7-0d35317de431",
+        "id": "fea1e547-5339-47a0-a7b2-a4950037f8f6",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "c81583fc-896a-4c1d-b5c1-71be0e67fcc6",
         "feisTitle": "Midlands Open Feis",
@@ -4054,7 +4064,7 @@
         "isPromotion": 0
       },
       {
-        "id": "85ce5876-0ebe-4490-829c-45ca392b431b",
+        "id": "95878256-69bd-4ff5-aa91-64b333006460",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -4073,7 +4083,7 @@
         "isPromotion": 0
       },
       {
-        "id": "3545bf7e-ec79-43bd-b6bb-e71875d2ae52",
+        "id": "3abf5693-2e51-4a97-819f-329f8c471c69",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -4092,7 +4102,7 @@
         "isPromotion": 0
       },
       {
-        "id": "8caa55e8-6417-40cf-9929-7fa8c0a79381",
+        "id": "962a4e5e-6a25-4fbc-84cc-168028899a46",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -4111,7 +4121,7 @@
         "isPromotion": 0
       },
       {
-        "id": "f06ce12f-fafc-4d9e-82b0-f7ffc774e35b",
+        "id": "66efe09f-eb06-493f-8e02-49e35d9bc41b",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -4130,7 +4140,7 @@
         "isPromotion": 0
       },
       {
-        "id": "aaefed0e-9a8a-4300-978b-21eff743b64f",
+        "id": "b42e4c1f-2362-44ea-bf04-a701bf3d29de",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "4e080be0-2d75-41d1-9d1e-ddce3c1ffe75",
         "feisTitle": "Celtic Championships",
@@ -4149,7 +4159,7 @@
         "isPromotion": 0
       },
       {
-        "id": "64c4a223-e462-4343-b074-2fb0b1c091d7",
+        "id": "e653d2b8-6d06-49ab-90c5-28f186665e01",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -4168,7 +4178,7 @@
         "isPromotion": 0
       },
       {
-        "id": "e30cad2d-2ed2-4131-91e3-6543c4e1eb33",
+        "id": "feeea768-815b-4fbe-aa51-347c758c97d0",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -4187,7 +4197,7 @@
         "isPromotion": 0
       },
       {
-        "id": "ff2d083c-b54a-42fc-8bac-021354d8ae72",
+        "id": "3ecd1d4c-1f6f-4916-a0cc-d759811ee83d",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -4206,7 +4216,7 @@
         "isPromotion": 0
       },
       {
-        "id": "736d54b4-e3c4-49f3-a0f0-1137d08a05a8",
+        "id": "65a01798-f6c3-4b0e-896f-3cf76f08f181",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -4225,7 +4235,7 @@
         "isPromotion": 0
       },
       {
-        "id": "7e8e45bb-ebfe-4a78-8b0d-d11f5fe2e533",
+        "id": "a277c27f-a84f-4f6c-b7d3-b9e6a835b66d",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "980d05ad-ad39-4818-9bbb-11bf1de86b87",
         "feisTitle": "Londubh Feis",
@@ -4244,7 +4254,7 @@
         "isPromotion": 0
       },
       {
-        "id": "46f85aa7-7535-4fae-8051-dab033689465",
+        "id": "17042312-1ae5-4225-84b3-6daa5c35b2ee",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -4263,7 +4273,7 @@
         "isPromotion": 0
       },
       {
-        "id": "9a07b5fb-4350-4b41-8bad-519406f18f5a",
+        "id": "e019eec8-f9ae-4d90-b394-4fb563ffe87d",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -4282,7 +4292,7 @@
         "isPromotion": 0
       },
       {
-        "id": "6d14d125-18d5-4909-90c0-a673c340e364",
+        "id": "f7304bfa-9f6b-426b-bd6f-e1fa04b73cee",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -4301,7 +4311,7 @@
         "isPromotion": 0
       },
       {
-        "id": "3cb0dfb3-3b36-4a92-b512-2487e24c568b",
+        "id": "c68e6628-ce47-44b1-99fc-7238a4291708",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -4320,7 +4330,7 @@
         "isPromotion": 0
       },
       {
-        "id": "5cbaa2ae-cb32-4e60-aa05-ff48dc3de2cf",
+        "id": "1dd1d8a0-e4fe-40da-a4e6-b3a7ef4fafa0",
         "dancerId": "dancer-sample-grade-002",
         "feisId": "2f5ac029-1f1f-4127-80c7-6aa8300a4473",
         "feisTitle": "South Derry South West Antrim Branch Feis",
@@ -4363,10 +4373,10 @@
       },
       {
         "dancerId": "dancer-sample-open-001",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
         "competitorNumber": "142",
-        "notes": "Results from Clare Feis",
-        "feisDate": "2026-02-07"
+        "notes": "Results from Rince O'Chroi",
+        "feisDate": "2026-02-14"
       },
       {
         "dancerId": "dancer-sample-open-001",
@@ -4377,10 +4387,10 @@
       },
       {
         "dancerId": "dancer-sample-open-001",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
         "competitorNumber": "142",
-        "notes": "Results from Wicklow Branch Feis",
-        "feisDate": "2026-03-01"
+        "notes": "Results from St Francis Feis",
+        "feisDate": "2026-03-07"
       },
       {
         "dancerId": "dancer-sample-open-001",
@@ -4405,10 +4415,10 @@
       },
       {
         "dancerId": "dancer-sample-open-001",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
         "competitorNumber": "142",
-        "notes": "Results from Feis Ath Luain",
-        "feisDate": "2026-05-01"
+        "notes": "Results from Manresa Feis",
+        "feisDate": "2026-05-02"
       },
       {
         "dancerId": "dancer-sample-open-001",
@@ -4531,10 +4541,10 @@
       },
       {
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "22412ac9-1bb6-4f7c-84e1-9fd63c415b0e",
+        "feisId": "31fab0cc-b21e-44d1-b122-9b7042008c24",
         "competitorNumber": "208",
-        "notes": "Results for Aoife at Clare Feis",
-        "feisDate": "2026-02-07"
+        "notes": "Results for Aoife at Rince O'Chroi",
+        "feisDate": "2026-02-14"
       },
       {
         "dancerId": "dancer-sample-grade-002",
@@ -4545,10 +4555,10 @@
       },
       {
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "b49a74ef-4872-4448-be6f-abc16e9051c6",
+        "feisId": "297c8e53-30bb-487f-a4c5-c88a71b06417",
         "competitorNumber": "208",
-        "notes": "Results for Aoife at Wicklow Branch Feis",
-        "feisDate": "2026-03-01"
+        "notes": "Results for Aoife at St Francis Feis",
+        "feisDate": "2026-03-07"
       },
       {
         "dancerId": "dancer-sample-grade-002",
@@ -4573,10 +4583,10 @@
       },
       {
         "dancerId": "dancer-sample-grade-002",
-        "feisId": "1a3f0e38-2531-4201-b185-b6adf5624337",
+        "feisId": "2d2299b9-f372-4ddb-86ec-9c83dcaa9696",
         "competitorNumber": "208",
-        "notes": "Results for Aoife at Feis Ath Luain",
-        "feisDate": "2026-05-01"
+        "notes": "Results for Aoife at Manresa Feis",
+        "feisDate": "2026-05-02"
       },
       {
         "dancerId": "dancer-sample-grade-002",
