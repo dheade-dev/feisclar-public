@@ -2,8 +2,8 @@
 set -euo pipefail
 
 # ==============================================================================
-# FeisClár APK Release Publisher
-# Automates replacing feisclar.apk on GitHub releases
+# FeisClár APK & Assets Release Publisher
+# Automates replacing feisclar.apk & backup datasets on GitHub releases & git repo
 # ==============================================================================
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -89,7 +89,7 @@ AUTH_HEADER="Authorization: Bearer $TOKEN"
 API_HEADER="Accept: application/vnd.github+json"
 
 echo "=================================================="
-echo "🚀 FeisClár APK Release Publisher"
+echo "🚀 FeisClár Release Publisher"
 echo "=================================================="
 echo "📦 Repository:  $REPO"
 echo "🏷️  Release Tag: $TAG"
@@ -114,78 +114,119 @@ if [[ "$HTTP_STATUS" -ne 200 ]]; then
   exit 1
 fi
 
-# Extract upload_url, release_id, and existing asset id using python
-READ_RESULT="$(python3 -c '
+UPLOAD_URL="$(python3 -c '
 import json, sys
 data = json.loads(sys.argv[1])
-release_id = data.get("id", "")
-upload_url = data.get("upload_url", "").split("{")[0]
-asset_id = ""
-for asset in data.get("assets", []):
-    if asset.get("name") == sys.argv[2]:
-        asset_id = str(asset.get("id", ""))
-        break
-print(f"{release_id}|{upload_url}|{asset_id}")
-' "$RELEASE_JSON" "$APK_NAME")"
-
-RELEASE_ID="$(echo "$READ_RESULT" | cut -d'|' -f1)"
-UPLOAD_URL="$(echo "$READ_RESULT" | cut -d'|' -f2)"
-EXISTING_ASSET_ID="$(echo "$READ_RESULT" | cut -d'|' -f3)"
+print(data.get("upload_url", "").split("{")[0])
+' "$RELEASE_JSON")"
 
 if [[ -z "$UPLOAD_URL" ]]; then
   echo "❌ Error: Could not determine release upload URL."
   exit 1
 fi
 
-# 5. Delete existing asset if present
-if [[ -n "$EXISTING_ASSET_ID" ]]; then
-  echo "🗑️  Removing existing '$APK_NAME' from release (Asset ID: $EXISTING_ASSET_ID)..."
-  DELETE_RESP="$(curl -s -o /dev/null -w "%{http_code}" -X DELETE \
+# Function to upload or replace a release asset
+upload_release_asset() {
+  local file_path="$1"
+  local content_type="$2"
+  local filename="$(basename "$file_path")"
+
+  if [[ ! -f "$file_path" ]]; then
+    echo "⚠️  Notice: File '$file_path' not found. Skipping."
+    return 0
+  fi
+
+  local file_size_bytes="$(stat -c%s "$file_path")"
+  local file_size_display
+  if [[ "$file_size_bytes" -ge 1048576 ]]; then
+    file_size_display="$(awk "BEGIN {printf \"%.2f MB\", $file_size_bytes / 1048576}")"
+  else
+    file_size_display="$(awk "BEGIN {printf \"%.1f KB\", $file_size_bytes / 1024}")"
+  fi
+
+  # Check if asset already exists on this release
+  local existing_id="$(python3 -c '
+import json, sys
+data = json.loads(sys.argv[1])
+found = ""
+for a in data.get("assets", []):
+    if a.get("name") == sys.argv[2]:
+        found = str(a.get("id", ""))
+        break
+print(found)
+' "$RELEASE_JSON" "$filename")"
+
+  if [[ -n "$existing_id" ]]; then
+    echo "🗑️  Removing previous asset '$filename' (ID: $existing_id)..."
+    curl -s -o /dev/null -X DELETE -H "$AUTH_HEADER" -H "$API_HEADER" \
+      "https://api.github.com/repos/$REPO/releases/assets/$existing_id" || true
+  fi
+
+  echo "⬆️  Uploading '$filename' ($file_size_display) to release '$TAG'..."
+  local upload_target="${UPLOAD_URL}?name=${filename}"
+  local upload_resp="$(curl -# -w "\n__HTTP_STATUS__%{http_code}" -X POST \
     -H "$AUTH_HEADER" \
     -H "$API_HEADER" \
-    "https://api.github.com/repos/$REPO/releases/assets/$EXISTING_ASSET_ID")"
+    -H "Content-Type: $content_type" \
+    --data-binary "@$file_path" \
+    "$upload_target")"
 
-  if [[ "$DELETE_RESP" -eq 204 || "$DELETE_RESP" -eq 200 ]]; then
-    echo "✅ Existing asset successfully deleted."
+  local upload_status="$(echo "$upload_resp" | grep "^__HTTP_STATUS__" | sed 's/^__HTTP_STATUS__//')"
+  local upload_json="$(echo "$upload_resp" | sed '/^__HTTP_STATUS__/d')"
+
+  if [[ "$upload_status" -eq 201 || "$upload_status" -eq 200 ]]; then
+    echo "✅ Published: https://github.com/$REPO/releases/download/$TAG/$filename"
   else
-    echo "⚠️  Notice: Delete returned HTTP $DELETE_RESP (proceeding with upload anyway)..."
+    echo "❌ Failed to upload '$filename' (HTTP $upload_status)."
+    echo "$upload_json"
+    return 1
   fi
-else
-  echo "ℹ️  No previous asset named '$APK_NAME' found in release."
+}
+
+# 5. Upload APK Release Asset
+upload_release_asset "$APK_PATH" "application/vnd.android.package-archive"
+
+# 6. Upload Sample Backup Datasets
+SAMPLE_JSON="$MAIN_REPO_DIR/sample_open_dancer_backup.json"
+SAMPLE_FEISCLAR="$MAIN_REPO_DIR/sample_open_dancer_backup.feisclar"
+
+if [[ -f "$SAMPLE_JSON" ]]; then
+  echo ""
+  echo "📦 Uploading Sample Dancer Backup Dataset..."
+  upload_release_asset "$SAMPLE_JSON" "application/json"
 fi
 
-# 6. Upload new APK asset with real-time progress
-echo "⬆️  Uploading new '$APK_NAME' ($APK_SIZE_MB MB) to release '$TAG'..."
-echo "   (Progress bar below indicates upload transfer)"
-
-UPLOAD_TARGET="${UPLOAD_URL}?name=${APK_NAME}"
-
-UPLOAD_RESP="$(curl -# -w "\n__HTTP_STATUS__%{http_code}" -X POST \
-  -H "$AUTH_HEADER" \
-  -H "$API_HEADER" \
-  -H "Content-Type: application/vnd.android.package-archive" \
-  --data-binary "@$APK_PATH" \
-  "$UPLOAD_TARGET")"
-
-UPLOAD_STATUS="$(echo "$UPLOAD_RESP" | grep "^__HTTP_STATUS__" | sed 's/^__HTTP_STATUS__//')"
-UPLOAD_JSON="$(echo "$UPLOAD_RESP" | sed '/^__HTTP_STATUS__/d')"
-
-if [[ "$UPLOAD_STATUS" -eq 201 || "$UPLOAD_STATUS" -eq 200 ]]; then
-  DOWNLOAD_URL="https://github.com/$REPO/releases/download/$TAG/$APK_NAME"
-  echo ""
-  echo "=================================================="
-  echo "🎉 SUCCESS! FeisClár APK Published Successfully!"
-  echo "=================================================="
-  echo "🌐 Release Page:   https://github.com/$REPO/releases/tag/$TAG"
-  echo "📥 Download URL:   $DOWNLOAD_URL"
-  echo "📱 Asset Name:     $APK_NAME"
-  echo "📊 File Size:      $APK_SIZE_MB MB"
-  echo "🕒 Published At:   $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
-  echo "=================================================="
-else
-  echo ""
-  echo "❌ Upload failed (HTTP $UPLOAD_STATUS)."
-  echo "GitHub Response:"
-  echo "$UPLOAD_JSON"
-  exit 1
+if [[ -f "$SAMPLE_FEISCLAR" ]]; then
+  upload_release_asset "$SAMPLE_FEISCLAR" "application/octet-stream"
 fi
+
+# 7. Sync Sample Backup Datasets directly to public git repository
+if [[ -d "$PUBLIC_REPO_DIR/.git" ]]; then
+  echo ""
+  echo "📂 Syncing backup files to git repository: $PUBLIC_REPO_DIR..."
+  cp "$SAMPLE_JSON" "$PUBLIC_REPO_DIR/" 2>/dev/null || true
+  cp "$SAMPLE_FEISCLAR" "$PUBLIC_REPO_DIR/" 2>/dev/null || true
+  (
+    cd "$PUBLIC_REPO_DIR"
+    git add sample_open_dancer_backup.json sample_open_dancer_backup.feisclar 2>/dev/null || true
+    if ! git diff-index --quiet HEAD -- 2>/dev/null; then
+      git commit -m "Update sample open dancer test backup data (Ciara Kelly - 24 feiseanna)" || true
+      echo "🚀 Pushing commits to remote git repository ($REPO)..."
+      git push origin main || echo "⚠️  Note: git push to origin main skipped or requires token/ssh auth."
+    else
+      echo "ℹ️  Git working tree clean; latest backup files are already committed."
+    fi
+  )
+fi
+
+echo ""
+echo "=================================================="
+echo "🎉 SUCCESS! All Release Assets & Git Data Updated!"
+echo "=================================================="
+echo "🌐 Release Page:  https://github.com/$REPO/releases/tag/$TAG"
+echo "📥 APK Asset:      https://github.com/$REPO/releases/download/$TAG/$APK_NAME"
+if [[ -f "$SAMPLE_JSON" ]]; then
+  echo "📄 Sample JSON:    https://github.com/$REPO/releases/download/$TAG/sample_open_dancer_backup.json"
+fi
+echo "🕒 Completed At:   $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+echo "=================================================="
