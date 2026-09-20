@@ -8,8 +8,9 @@
 ## Key Features
 
 - **Feis Discovery & Interactive Map**: Browse upcoming feiseanna across Ireland, the UK, Europe, North America, and Australia. Filter by event type (*Major*, *Provincial*, *Open*, *Confined*).
-- **Personal Dancer Vault**: Track multiple dancers, record competition placements (Solo, Trophy, Championship, NCH), judge marks, and personal bests.
-- **Visual Results Share Card**: Generate beautiful shareable celebration graphics with separate sections for Solos and Championship/Trophy dances.
+- **Personal Dancer Vault & Interactive Charting**: Track multiple dancers, record competition placements (Solos, Trophy, Championship, Confined, NCH), judge marks (3 at Open Feiseanna, 5 at Majors), and personal bests. Tap the trending line graph icon to visualize multi-line placement trajectories across the season with dynamic scaling and monthly timeline filters.
+- **Podium Pictures & Social Stories**: Snap or upload real podium and trophy photos directly into Celtic-bordered story cards (Championship Podium, Confined Cup, Trophy Win, Solo Medals) for instant one-tap sharing to Instagram Stories and WhatsApp.
+- **10 Grade Examination Journey**: Track Grades 1 to 10 with official candidate numbers (Dancer #), examination distinctions, percentage scores, target countdowns, and full-screen certificate photo storage.
 - **Calendar & Reminders**: Add any feis directly into your native device calendar with start/end times, venue addresses, syllabus links, entry portal links, and notes.
 - **Dynamic Tile Indicators**:
   - Crisp white feis tile icons with dynamic colored rings matching the event type (Gold for Major, Blue for Provincial, Red for Confined, Green for Open).
