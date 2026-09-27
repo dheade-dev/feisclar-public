@@ -15,6 +15,9 @@
 - **Dynamic Tile Indicators**:
   - Crisp white feis tile icons with dynamic colored rings matching the event type (Gold for Major, Blue for Provincial, Red for Confined, Green for Open).
   - Clear **CANCELLED** banner overlay for cancelled events.
+- **Target Feiseanna & Live Squad Attendance Coordination**:
+  - **Teacher POV**: TCRGs can designate official school Target Feiseanna with 1 tap, automatically bookmarking them on connected student schedules. Monitor the live squad roster ("WHO'S GOING ?") categorized by Going, Out, and timestamped Possible queues (max 5 spots, first-come first-served).
+  - **Dancer & Family POV**: Target Feis events light up with a bold emerald green border and animated `Target ⚡ Action Needed` badge on Home and Calendar. Families select attendance (Going, Possible, Not Going) for each dancer in seconds.
 - **Offline First**: All dancer records, bookmarks, and feis data are stored locally in SQLite and encrypted private device storage.
 
 ---
