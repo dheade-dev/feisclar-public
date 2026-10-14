@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "app": "FeisClár",
+  "app": "FeisCl\u00e1r",
   "exportDate": "2026-10-14T19:46:00.000Z",
   "exportedAt": "2026-10-14T19:46:00.000Z",
   "device": "Simulator / FeisClar Store iPhone",
@@ -83,9 +83,9 @@
     },
     {
       "id": "dancer-student-005",
-      "nickname": "Roisin O’Brien",
+      "nickname": "Roisin O\u2019Brien",
       "firstName": "Roisin",
-      "lastName": "O’Brien",
+      "lastName": "O\u2019Brien",
       "birthYear": 2013,
       "homeProvince": "Leinster",
       "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -119,9 +119,9 @@
     },
     {
       "id": "dancer-student-008",
-      "nickname": "Orla O’Connor",
+      "nickname": "Orla O\u2019Connor",
       "firstName": "Orla",
-      "lastName": "O’Connor",
+      "lastName": "O\u2019Connor",
       "birthYear": 2016,
       "homeProvince": "Leinster",
       "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -131,9 +131,9 @@
     },
     {
       "id": "dancer-student-009",
-      "nickname": "Maeve O’Neill",
+      "nickname": "Maeve O\u2019Neill",
       "firstName": "Maeve",
-      "lastName": "O’Neill",
+      "lastName": "O\u2019Neill",
       "birthYear": 2017,
       "homeProvince": "Leinster",
       "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -191,9 +191,9 @@
     },
     {
       "id": "dancer-student-014",
-      "nickname": "Eabha O’Sullivan",
+      "nickname": "Eabha O\u2019Sullivan",
       "firstName": "Eabha",
-      "lastName": "O’Sullivan",
+      "lastName": "O\u2019Sullivan",
       "birthYear": 2010,
       "homeProvince": "Leinster",
       "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -7309,7 +7309,7 @@
             {
               "id": "student-ws-005",
               "dancerId": "dancer-student-005",
-              "name": "Roisin O’Brien",
+              "name": "Roisin O\u2019Brien",
               "revision": 1
             },
             {
@@ -7327,13 +7327,13 @@
             {
               "id": "student-ws-008",
               "dancerId": "dancer-student-008",
-              "name": "Orla O’Connor",
+              "name": "Orla O\u2019Connor",
               "revision": 1
             },
             {
               "id": "student-ws-009",
               "dancerId": "dancer-student-009",
-              "name": "Maeve O’Neill",
+              "name": "Maeve O\u2019Neill",
               "revision": 1
             },
             {
@@ -7363,7 +7363,7 @@
             {
               "id": "student-ws-014",
               "dancerId": "dancer-student-014",
-              "name": "Eabha O’Sullivan",
+              "name": "Eabha O\u2019Sullivan",
               "revision": 1
             },
             {
@@ -11256,14 +11256,15 @@
                 "start": "2026-09-01",
                 "end": "2026-12-20",
                 "publication": "published",
-                "revision": 1
+                "revision": 1,
+                "closures": []
               }
             ],
             "locations": [
               {
                 "id": "loc-st-patricks-hall",
                 "name": "St Patrick Community Hall",
-                "zone": "Dublin",
+                "zone": "Europe/Dublin",
                 "revision": 1
               }
             ],
@@ -11309,7 +11310,7 @@
               {
                 "id": "student-ws-005",
                 "dancerId": "dancer-student-005",
-                "name": "Roisin O’Brien",
+                "name": "Roisin O\u2019Brien",
                 "revision": 1
               },
               {
@@ -11327,13 +11328,13 @@
               {
                 "id": "student-ws-008",
                 "dancerId": "dancer-student-008",
-                "name": "Orla O’Connor",
+                "name": "Orla O\u2019Connor",
                 "revision": 1
               },
               {
                 "id": "student-ws-009",
                 "dancerId": "dancer-student-009",
-                "name": "Maeve O’Neill",
+                "name": "Maeve O\u2019Neill",
                 "revision": 1
               },
               {
@@ -11363,7 +11364,7 @@
               {
                 "id": "student-ws-014",
                 "dancerId": "dancer-student-014",
-                "name": "Eabha O’Sullivan",
+                "name": "Eabha O\u2019Sullivan",
                 "revision": 1
               },
               {
@@ -12026,13 +12027,21 @@
                 ],
                 "slots": [
                   {
-                    "dayOfWeek": 1,
-                    "startTime": "17:00",
-                    "durationMinutes": 90,
-                    "locationId": "loc-st-patricks-hall"
+                    "weekday": 1,
+                    "start": "17:00",
+                    "end": "18:30",
+                    "locationId": "loc-st-patricks-hall",
+                    "fold": "earlier"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "exclusions": [],
+                "scheduleChanges": [],
+                "interval": 1,
+                "start": "2026-09-07",
+                "end": "2026-12-14",
+                "notes": "",
+                "confirmed": true
               },
               {
                 "id": "series-beg-weekly",
@@ -12064,13 +12073,21 @@
                 ],
                 "slots": [
                   {
-                    "dayOfWeek": 1,
-                    "startTime": "18:45",
-                    "durationMinutes": 60,
-                    "locationId": "loc-st-patricks-hall"
+                    "weekday": 1,
+                    "start": "18:45",
+                    "end": "19:45",
+                    "locationId": "loc-st-patricks-hall",
+                    "fold": "earlier"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "exclusions": [],
+                "scheduleChanges": [],
+                "interval": 1,
+                "start": "2026-09-07",
+                "end": "2026-12-14",
+                "notes": "",
+                "confirmed": true
               }
             ],
             "occurrences": [
@@ -12084,7 +12101,11 @@
                 "end": "2026-09-07T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -12208,7 +12229,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-07",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-09-07",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-1",
@@ -12220,7 +12248,11 @@
                 "end": "2026-09-07T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -12304,7 +12336,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-07",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-09-07",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-2",
@@ -12316,7 +12355,11 @@
                 "end": "2026-09-14T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -12440,7 +12483,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-14",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-09-14",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-2",
@@ -12452,7 +12502,11 @@
                 "end": "2026-09-14T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -12536,7 +12590,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-14",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-09-14",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-3",
@@ -12548,7 +12609,11 @@
                 "end": "2026-09-21T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -12672,7 +12737,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-21",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-09-21",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-3",
@@ -12684,7 +12756,11 @@
                 "end": "2026-09-21T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -12768,7 +12844,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-21",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-09-21",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-4",
@@ -12780,7 +12863,11 @@
                 "end": "2026-09-28T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -12904,7 +12991,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-28",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-09-28",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-4",
@@ -12916,7 +13010,11 @@
                 "end": "2026-09-28T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13000,7 +13098,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-09-28",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-09-28",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-5",
@@ -13012,7 +13117,11 @@
                 "end": "2026-10-05T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13136,7 +13245,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-05",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-10-05",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-5",
@@ -13148,7 +13264,11 @@
                 "end": "2026-10-05T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13232,7 +13352,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-05",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-10-05",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-6",
@@ -13244,7 +13371,11 @@
                 "end": "2026-10-12T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13368,7 +13499,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-12",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-10-12",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-6",
@@ -13380,7 +13518,11 @@
                 "end": "2026-10-12T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13464,7 +13606,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-12",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-10-12",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-7",
@@ -13476,7 +13625,11 @@
                 "end": "2026-10-19T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13600,7 +13753,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-19",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-10-19",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-7",
@@ -13612,7 +13772,11 @@
                 "end": "2026-10-19T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13696,7 +13860,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-19",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-10-19",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-8",
@@ -13708,7 +13879,11 @@
                 "end": "2026-10-26T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13832,7 +14007,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-26",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-10-26",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-8",
@@ -13844,7 +14026,11 @@
                 "end": "2026-10-26T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -13928,7 +14114,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-10-26",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-10-26",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-9",
@@ -13940,7 +14133,11 @@
                 "end": "2026-11-02T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14064,7 +14261,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-02",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-11-02",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-9",
@@ -14076,7 +14280,11 @@
                 "end": "2026-11-02T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14160,7 +14368,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-02",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-11-02",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-10",
@@ -14172,7 +14387,11 @@
                 "end": "2026-11-09T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14296,7 +14515,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-09",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-11-09",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-10",
@@ -14308,7 +14534,11 @@
                 "end": "2026-11-09T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14392,7 +14622,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-09",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-11-09",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-11",
@@ -14404,7 +14641,11 @@
                 "end": "2026-11-16T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14528,7 +14769,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-16",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-11-16",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-11",
@@ -14540,7 +14788,11 @@
                 "end": "2026-11-16T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14624,7 +14876,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-16",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-11-16",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-adv-12",
@@ -14636,7 +14895,11 @@
                 "end": "2026-11-23T18:30:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Main Hall"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14760,7 +15023,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-23",
+                "startTime": "17:00",
+                "endTime": "18:30",
+                "originalKey": "series-adv-weekly:2026-11-23",
+                "title": "Monday Class"
               },
               {
                 "id": "occ-beg-12",
@@ -14772,7 +15042,11 @@
                 "end": "2026-11-23T19:45:00.000Z",
                 "location": {
                   "id": "loc-st-patricks-hall",
-                  "zone": "Studio 2"
+                  "name": "St Patrick Community Hall",
+                  "zone": "Europe/Dublin",
+                  "room": "Main Hall",
+                  "address": "Main Street, Dublin",
+                  "instructions": ""
                 },
                 "participants": [
                   {
@@ -14856,7 +15130,14 @@
                     "attendance": "present"
                   }
                 ],
-                "revision": 1
+                "revision": 1,
+                "confirmed": true,
+                "notes": "",
+                "date": "2026-11-23",
+                "startTime": "18:45",
+                "endTime": "19:45",
+                "originalKey": "series-beg-weekly:2026-11-23",
+                "title": "Monday Class"
               }
             ],
             "feedback": [],
@@ -14878,9 +15159,13 @@
                 "notices": "Please remember hard shoes and water bottles for all Monday sessions.",
                 "facebook": "https://facebook.com/AngelaBrienSchool",
                 "privateNotes": "Teacher notes: Autumn feis entries due by November 1st.",
-                "logo": ""
+                "logo": "",
+                "id": "school",
+                "revision": 1
               }
-            ]
+            ],
+            "drafts": [],
+            "changes": []
           }
         }
       ],
@@ -15304,9 +15589,9 @@
       },
       {
         "id": "dancer-student-005",
-        "nickname": "Roisin O’Brien",
+        "nickname": "Roisin O\u2019Brien",
         "firstName": "Roisin",
-        "lastName": "O’Brien",
+        "lastName": "O\u2019Brien",
         "birthYear": 2013,
         "homeProvince": "Leinster",
         "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -15340,9 +15625,9 @@
       },
       {
         "id": "dancer-student-008",
-        "nickname": "Orla O’Connor",
+        "nickname": "Orla O\u2019Connor",
         "firstName": "Orla",
-        "lastName": "O’Connor",
+        "lastName": "O\u2019Connor",
         "birthYear": 2016,
         "homeProvince": "Leinster",
         "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -15352,9 +15637,9 @@
       },
       {
         "id": "dancer-student-009",
-        "nickname": "Maeve O’Neill",
+        "nickname": "Maeve O\u2019Neill",
         "firstName": "Maeve",
-        "lastName": "O’Neill",
+        "lastName": "O\u2019Neill",
         "birthYear": 2017,
         "homeProvince": "Leinster",
         "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
@@ -15412,9 +15697,9 @@
       },
       {
         "id": "dancer-student-014",
-        "nickname": "Eabha O’Sullivan",
+        "nickname": "Eabha O\u2019Sullivan",
         "firstName": "Eabha",
-        "lastName": "O’Sullivan",
+        "lastName": "O\u2019Sullivan",
         "birthYear": 2010,
         "homeProvince": "Leinster",
         "schoolId": "e56d6481-7b5e-4529-b22a-acdff433f858",
